@@ -1,0 +1,73 @@
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #021c28;
+    }
+
+
+    #clockContainer {
+        margin: auto;
+        position: relative;
+        width: 40vw;
+        height: 40vw;
+        background: url('https://spng.pngfind.com/pngs/s/64-647942_banner-stock-clipart-clock-face-clock-with-no.png') no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+
+    }
+
+    #clockContainer::before {
+        content: '';
+        left: 48.25%;
+        top: 47.5%;
+        position: absolute;
+        width: 3%;
+        height: 3%;
+        background: rgb(127, 105, 105);
+        border-radius: 50%;
+        z-index: 10000;
+    }
+
+    #hour,
+    #minute,
+    #second {
+        position: absolute;
+        background: rgb(58, 34, 34);
+        border-radius: 10px;
+        transform-origin: bottom;
+        border-radius: 50%;
+        width: 0.7%;
+        height: 38%;
+        top: 9%;
+        left: 49.25%;
+        background: #28333d;
+        z-index: 10;
+        border-radius: 5px 5px;
+    }
+
+    #hour {
+        width: 1.8%;
+        height: 24%;
+        top: 25%;
+        background: #190f12;
+        left: 48.85%;
+        z-index: 10;
+        border-radius: 5px 5px;
+
+    }
+
+    #minute {
+        width: 1.56%;
+        height: 30%;
+        top: 19%;
+        left: 48.9%;
+        background: #020101;
+        z-index: 11;
+        border-radius: 6px 6px 0 0;
+
+    }
+
+    
